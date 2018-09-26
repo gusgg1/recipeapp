@@ -44,9 +44,9 @@
         <div v-for="category in categories" class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-primary">Category: {{ category.title }}</strong>
+              <strong class="d-inline-block mb-2 text-primary">Cousine: {{ category.title }}</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Add your recipe to the {{ category.title }} category.</a>
+                <p class="text-dark">Add your recipe to the {{ category.title }} category.</p>
               </h3>
               <div class="mb-1 text-muted">{{ category.created_at }}</div>
               
