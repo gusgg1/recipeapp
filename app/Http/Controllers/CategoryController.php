@@ -52,20 +52,11 @@ class CategoryController extends Controller
 
         $category = $request->isMethod('put') ? Category::findOrFail($request->article_id) : new Category;
 
-        // $category->id = $request->input('article_id');
         $category->title = $request->input('title');
 
         if ($category->save()) {
             return new CategoryResource($category);
         }
-
-
-
-        // $category = new Category();
-        // $category->title = $request->title;
-        // $category->save();
-
-        // return new ArticleResource($article);
     }
 
     /**

@@ -40,18 +40,7 @@ class RecipesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-
-        // $recipe = new Recipes();
-        // $recipe->title = $request->title;
-        // $recipe->category_id = $request->category_id;
-        // $recipe->ingredients = $request->ingredients;
-        // $recipe->steps = $request->steps;
-        // $recipe->duration = $request->duration;
-        // $recipe->publish = $request->publish;
-        // $recipe->save();
-
-        
+    {        
         $this->validate($request, [
             'title' => 'required',
             'ingredients' => 'required',

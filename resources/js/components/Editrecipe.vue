@@ -46,7 +46,6 @@
     },
 
     created() {
-      // this.recipe.publish = false;
       axios.get(`/recipes/${this.$route.params.id}/edit`)
         .then(({data}) => {
           this.recipe = data;

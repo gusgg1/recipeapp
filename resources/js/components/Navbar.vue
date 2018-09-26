@@ -2,9 +2,9 @@
     <div class="container">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
+          <!-- <div class="col-4 pt-1">
             <a class="text-muted" href="#">Subscribe</a>
-          </div>
+          </div> -->
           <div class="col-4 text-center">
             <a class="blog-header-logo text-dark" href="#">My Recipe App</a>
           </div>
@@ -12,7 +12,7 @@
             <a class="text-muted" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
           </div>
         </div>
       </header>
@@ -30,7 +30,6 @@
           <h2 class="display-5 font-italic">Create a cooking category and add your recipe to it...</h2>           
 
           <router-link role="button" class="btn btn-primary btn-lg active" v-bind:to="{path: '/add-recipe'}">
-            <!-- <h1 class="display-5 font-italic">Create a cooking category and add your recipe to it...</h1>            -->
             Create category
           </router-link>
 
@@ -45,9 +44,9 @@
           <div class="card flex-md-row mb-4 shadow-sm h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary">Cousine: {{ category.title }}</strong>
-              <h3 class="mb-0">
+              <h5 class="mb-0">
                 <p class="text-dark">Add your recipe to the {{ category.title }} category.</p>
-              </h3>
+              </h5>
               <div class="mb-1 text-muted">{{ category.created_at }}</div>
               
               <router-link role="button" class="btn btn-success btn-sx mt-3 mb-4" v-bind:to="{name: 'Addrecipe', params: {id: category.id}}">
@@ -58,7 +57,6 @@
                 See all the recipes here
               </router-link>
             </div>
-            <!-- <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap"> -->
           </div>
         </div>
 
@@ -89,15 +87,7 @@
           this.categories = data.data;
         })
         .catch(err => console.log(err));
-    },
-
-    // computed: {
-    //   filteredCategories: function() {
-    //     if (this.posts.length) {
-    //       return this.posts;
-    //     }
-    //   }
-    // }
+    }
   }
 </script>
 

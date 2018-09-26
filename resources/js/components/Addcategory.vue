@@ -21,7 +21,6 @@
   export default {
     data() {
       return {
-        // category: {title: '', category_id: ''}
         category: {title: ''}
       }
     },

@@ -50068,8 +50068,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -50109,8 +50107,6 @@ var render = function() {
         [
           _vm._m(0),
           _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
           _c(
             "div",
             {
@@ -50143,23 +50139,14 @@ var render = function() {
                     })
                   ]
                 )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-sm btn-outline-secondary",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("Sign up")]
-              )
+              ])
             ]
           )
         ]
       )
     ]),
     _vm._v(" "),
-    _vm._m(2),
+    _vm._m(1),
     _vm._v(" "),
     _c(
       "div",
@@ -50212,7 +50199,7 @@ var render = function() {
                     [_vm._v("Cousine: " + _vm._s(category.title))]
                   ),
                   _vm._v(" "),
-                  _c("h3", { staticClass: "mb-0" }, [
+                  _c("h5", { staticClass: "mb-0" }, [
                     _c("p", { staticClass: "text-dark" }, [
                       _vm._v(
                         "Add your recipe to the " +
@@ -50260,20 +50247,10 @@ var render = function() {
       })
     ),
     _vm._v(" "),
-    _vm._m(3)
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-4 pt-1" }, [
-      _c("a", { staticClass: "text-muted", attrs: { href: "#" } }, [
-        _vm._v("Subscribe")
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -50402,7 +50379,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      // category: {title: '', category_id: ''}
       category: { title: '' }
     };
   },
@@ -51157,7 +51133,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   created: function created() {
     var _this = this;
 
-    // this.recipe.publish = false;
     axios.get('/recipes/' + this.$route.params.id + '/edit').then(function (_ref) {
       var data = _ref.data;
 
