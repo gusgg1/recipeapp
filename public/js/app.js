@@ -50068,6 +50068,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -50097,57 +50100,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("header", { staticClass: "blog-header py-3" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "row flex-nowrap justify-content-between align-items-center"
-        },
-        [
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "col-4 d-flex justify-content-end align-items-center"
-            },
-            [
-              _c("a", { staticClass: "text-muted", attrs: { href: "#" } }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "mx-3",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      width: "20",
-                      height: "20",
-                      viewBox: "0 0 24 24",
-                      fill: "none",
-                      stroke: "currentColor",
-                      "stroke-width": "2",
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round"
-                    }
-                  },
-                  [
-                    _c("circle", {
-                      attrs: { cx: "10.5", cy: "10.5", r: "7.5" }
-                    }),
-                    _c("line", {
-                      attrs: { x1: "21", y1: "21", x2: "15.8", y2: "15.8" }
-                    })
-                  ]
-                )
-              ])
-            ]
-          )
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
     _c(
       "div",
       { staticClass: "jumbotron p-3 p-md-5 text-white rounded bg-dark" },
@@ -50247,42 +50199,10 @@ var render = function() {
       })
     ),
     _vm._v(" "),
-    _vm._m(2)
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-4 text-center" }, [
-      _c(
-        "a",
-        { staticClass: "blog-header-logo text-dark", attrs: { href: "#" } },
-        [_vm._v("My Recipe App")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "nav-scroller py-1 mb-2" }, [
-      _c("nav", { staticClass: "nav d-flex justify-content-between" }, [
-        _c("a", { staticClass: "p-2 text-muted", attrs: { href: "#" } }, [
-          _vm._v("Mediterranean diet")
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "p-2 text-muted", attrs: { href: "#" } }, [
-          _vm._v("Cooking")
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "p-2 text-muted", attrs: { href: "#" } }, [
-          _vm._v("Ketogenic diet")
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
