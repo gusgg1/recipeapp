@@ -50080,7 +50080,7 @@ var render = function() {
             _c(
               "router-link",
               {
-                staticClass: "btn btn-primary btn-lg active",
+                staticClass: "btn btn-primary btn-lg",
                 attrs: { role: "button", to: { path: "/add-recipe" } }
               },
               [_vm._v("\n        Create category\n      ")]

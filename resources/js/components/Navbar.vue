@@ -5,7 +5,7 @@
       <div class="col-md-6 px-0">
         <h2 class="display-5 font-italic">Create a cooking category and add your recipe to it...</h2>           
 
-        <router-link role="button" class="btn btn-primary btn-lg active" v-bind:to="{path: '/add-recipe'}">
+        <router-link role="button" class="btn btn-primary btn-lg" v-bind:to="{path: '/add-recipe'}">
           Create category
         </router-link>
 
