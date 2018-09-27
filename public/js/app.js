@@ -50036,41 +50036,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -50099,7 +50064,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", [
     _c(
       "div",
       { staticClass: "jumbotron p-3 p-md-5 text-white rounded bg-dark" },
@@ -50132,7 +50097,7 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "row mb-2" },
+      { staticClass: "row bottom-m" },
       _vm._l(_vm.categories, function(category) {
         return _c("div", { staticClass: "col-md-6" }, [
           _c(
@@ -50148,7 +50113,7 @@ var render = function() {
                   _c(
                     "strong",
                     { staticClass: "d-inline-block mb-2 text-primary" },
-                    [_vm._v("Cousine: " + _vm._s(category.title))]
+                    [_vm._v("Cuisine: " + _vm._s(category.title))]
                   ),
                   _vm._v(" "),
                   _c("h5", { staticClass: "mb-0" }, [
@@ -50197,23 +50162,10 @@ var render = function() {
           )
         ])
       })
-    ),
-    _vm._v(" "),
-    _vm._m(0)
+    )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "blog-footer" }, [
-      _c("p", [_vm._v("© My Recipe App - 2018")]),
-      _vm._v(" "),
-      _c("p", [_c("a", { attrs: { href: "#" } }, [_vm._v("Back to top")])])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -50293,8 +50245,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -50325,69 +50275,67 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c(
-      "form",
-      {
-        staticClass: "form-signin mt-4",
-        on: {
-          submit: function($event) {
-            $event.preventDefault()
-            return _vm.createCategory($event)
-          }
+  return _c(
+    "form",
+    {
+      staticClass: "form-signin mt-4",
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.createCategory($event)
         }
-      },
-      [
-        _c("h3", [
-          _vm._v("Create your own category and add your own recipe to it.")
-        ]),
+      }
+    },
+    [
+      _c("h3", [
+        _vm._v("Create your own category and add your own recipe to it.")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "add-title" } }, [_vm._v("Category")]),
         _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "add-title" } }, [_vm._v("Category")]),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.category.title,
-                expression: "category.title"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              id: "add-title",
-              placeholder: "Category",
-              required: "",
-              autofocus: ""
-            },
-            domProps: { value: _vm.category.title },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.category, "title", $event.target.value)
-              }
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.category.title,
+              expression: "category.title"
             }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-xs btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Publish Category")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          { staticClass: "btn btn-xs btn-warning", attrs: { to: "/" } },
-          [_vm._v("Cancel")]
-        )
-      ],
-      1
-    )
-  ])
+          ],
+          staticClass: "form-control",
+          attrs: {
+            id: "add-title",
+            placeholder: "Category",
+            required: "",
+            autofocus: ""
+          },
+          domProps: { value: _vm.category.title },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.category, "title", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-xs btn-primary", attrs: { type: "submit" } },
+        [_vm._v("Publish Category")]
+      ),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        { staticClass: "btn btn-xs btn-warning", attrs: { to: "/" } },
+        [_vm._v("Cancel")]
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -50488,9 +50436,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -50531,222 +50476,217 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container mb-4" }, [
-    _c(
-      "form",
-      {
-        staticClass: "form-signin mt-4",
-        on: {
-          submit: function($event) {
-            $event.preventDefault()
-            return _vm.createRecipe($event)
-          }
+  return _c(
+    "form",
+    {
+      staticClass: "form-signin mt-4 mb-4",
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.createRecipe($event)
         }
-      },
-      [
-        _c("h3", [_vm._v("Add your recipe")]),
+      }
+    },
+    [
+      _c("h3", { staticClass: "text-center" }, [_vm._v("Add your recipe")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "add-title" } }, [_vm._v("Title:")]),
         _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "add-title" } }, [_vm._v("Title:")]),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.recipe.title,
-                expression: "recipe.title"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              id: "add-title",
-              placeholder: "Title",
-              required: "",
-              autofocus: ""
-            },
-            domProps: { value: _vm.recipe.title },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.recipe, "title", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "add-ingredients" } }, [
-            _vm._v("Ingredients:")
-          ]),
-          _vm._v(" "),
-          _c("textarea", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.recipe.ingredients,
-                expression: "recipe.ingredients"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              id: "add-ingredients",
-              cols: "15",
-              rows: "5",
-              required: "",
-              placeholder: "List of ingredients..."
-            },
-            domProps: { value: _vm.recipe.ingredients },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.recipe, "ingredients", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "add-steps" } }, [_vm._v("Steps:")]),
-          _vm._v(" "),
-          _c("textarea", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.recipe.steps,
-                expression: "recipe.steps"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              id: "add-steps",
-              cols: "15",
-              rows: "5",
-              placeholder: "Steps for preparation...",
-              required: ""
-            },
-            domProps: { value: _vm.recipe.steps },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.recipe, "steps", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "add-duration" } }, [
-            _vm._v("Duration:")
-          ]),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.recipe.duration,
-                expression: "recipe.duration"
-              }
-            ],
-            staticClass: "form-control",
-            attrs: {
-              id: "add-duration",
-              placeholder: "Type minutes",
-              maxlength: "3",
-              required: ""
-            },
-            domProps: { value: _vm.recipe.duration },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.$set(_vm.recipe, "duration", $event.target.value)
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "custom-control custom-checkbox mb-3" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.recipe.publish,
-                expression: "recipe.publish"
-              }
-            ],
-            staticClass: "custom-control-input",
-            attrs: { type: "checkbox", id: "customCheck1" },
-            domProps: {
-              checked: Array.isArray(_vm.recipe.publish)
-                ? _vm._i(_vm.recipe.publish, null) > -1
-                : _vm.recipe.publish
-            },
-            on: {
-              change: function($event) {
-                var $$a = _vm.recipe.publish,
-                  $$el = $event.target,
-                  $$c = $$el.checked ? true : false
-                if (Array.isArray($$a)) {
-                  var $$v = null,
-                    $$i = _vm._i($$a, $$v)
-                  if ($$el.checked) {
-                    $$i < 0 &&
-                      _vm.$set(_vm.recipe, "publish", $$a.concat([$$v]))
-                  } else {
-                    $$i > -1 &&
-                      _vm.$set(
-                        _vm.recipe,
-                        "publish",
-                        $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                      )
-                  }
-                } else {
-                  _vm.$set(_vm.recipe, "publish", $$c)
-                }
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c(
-            "label",
+        _c("input", {
+          directives: [
             {
-              staticClass: "custom-control-label",
-              attrs: { for: "customCheck1" }
-            },
-            [_vm._v("Would you like to publish your recipe?")]
-          )
+              name: "model",
+              rawName: "v-model",
+              value: _vm.recipe.title,
+              expression: "recipe.title"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            id: "add-title",
+            placeholder: "Title",
+            required: "",
+            autofocus: ""
+          },
+          domProps: { value: _vm.recipe.title },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.recipe, "title", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "add-ingredients" } }, [
+          _vm._v("Ingredients:")
         ]),
         _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-xs btn-primary mr-3",
-            attrs: { type: "submit" }
+        _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.recipe.ingredients,
+              expression: "recipe.ingredients"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            id: "add-ingredients",
+            cols: "15",
+            rows: "5",
+            required: "",
+            placeholder: "List of ingredients..."
           },
-          [_vm._v("Publish Recipe")]
-        ),
+          domProps: { value: _vm.recipe.ingredients },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.recipe, "ingredients", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "add-steps" } }, [_vm._v("Steps:")]),
+        _vm._v(" "),
+        _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.recipe.steps,
+              expression: "recipe.steps"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            id: "add-steps",
+            cols: "15",
+            rows: "5",
+            placeholder: "Steps for preparation...",
+            required: ""
+          },
+          domProps: { value: _vm.recipe.steps },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.recipe, "steps", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "add-duration" } }, [_vm._v("Duration:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.recipe.duration,
+              expression: "recipe.duration"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            id: "add-duration",
+            placeholder: "Type minutes",
+            maxlength: "3",
+            required: ""
+          },
+          domProps: { value: _vm.recipe.duration },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.recipe, "duration", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "custom-control custom-checkbox mb-3" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.recipe.publish,
+              expression: "recipe.publish"
+            }
+          ],
+          staticClass: "custom-control-input",
+          attrs: { type: "checkbox", id: "customCheck1" },
+          domProps: {
+            checked: Array.isArray(_vm.recipe.publish)
+              ? _vm._i(_vm.recipe.publish, null) > -1
+              : _vm.recipe.publish
+          },
+          on: {
+            change: function($event) {
+              var $$a = _vm.recipe.publish,
+                $$el = $event.target,
+                $$c = $$el.checked ? true : false
+              if (Array.isArray($$a)) {
+                var $$v = null,
+                  $$i = _vm._i($$a, $$v)
+                if ($$el.checked) {
+                  $$i < 0 && _vm.$set(_vm.recipe, "publish", $$a.concat([$$v]))
+                } else {
+                  $$i > -1 &&
+                    _vm.$set(
+                      _vm.recipe,
+                      "publish",
+                      $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                    )
+                }
+              } else {
+                _vm.$set(_vm.recipe, "publish", $$c)
+              }
+            }
+          }
+        }),
         _vm._v(" "),
         _c(
-          "router-link",
-          { staticClass: "btn btn-xs btn-warning", attrs: { to: "/" } },
-          [_vm._v("Cancel")]
+          "label",
+          {
+            staticClass: "custom-control-label",
+            attrs: { for: "customCheck1" }
+          },
+          [_vm._v("Would you like to publish your recipe?")]
         )
-      ],
-      1
-    )
-  ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-xs btn-primary mr-3",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("Publish Recipe")]
+      ),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        { staticClass: "btn btn-xs btn-warning", attrs: { to: "/" } },
+        [_vm._v("Cancel")]
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -50829,7 +50769,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -50881,9 +50820,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
+    { staticClass: "bottom-m" },
     _vm._l(_vm.recipes, function(recipe) {
-      return _c("div", { staticClass: "card mt-4" }, [
+      return _c("div", { staticClass: "card mt-4 mb-4" }, [
         _c("h5", { staticClass: "card-header" }, [
           _vm._v(_vm._s(recipe.duration) + " min.")
         ]),
@@ -51084,11 +51023,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container mb-4" }, [
+  return _c("div", { staticClass: "bottom-m" }, [
     _c(
       "form",
       {
-        staticClass: "form-signin mt-4",
+        staticClass: "form-signin mt-4 mb-4",
         on: {
           submit: function($event) {
             $event.preventDefault()

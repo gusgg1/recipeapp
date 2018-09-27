@@ -10471,6 +10471,23 @@ a.text-dark:focus {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
@@ -10622,5 +10639,26 @@ h6 {
 
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.bottom-m {
+  margin-bottom: 60px;
+}
+
+.main-container {
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px;
+  /* height of your footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px !important;
 }
 

@@ -1,7 +1,6 @@
 <template>
-  <div class="container">
-
-    <div v-for="recipe in recipes" class="card mt-4">
+  <div class="bottom-m">
+    <div v-for="recipe in recipes" class="card mt-4 mb-4">
       <h5 class="card-header">{{ recipe.duration }} min.</h5>
       <div class="card-body">
         <h3 class="card-title">{{ recipe.title }}</h3>
@@ -13,8 +12,8 @@
         <router-link class="btn btn-warning btn-xs" v-bind:to="{name: 'Editrecipe', params: {id: recipe.id}}">Edit</router-link>
       </div>
     </div>
-
   </div>
+
 </template>
 
 <script>
