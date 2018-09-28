@@ -50278,7 +50278,7 @@ var render = function() {
   return _c(
     "form",
     {
-      staticClass: "form-signin mt-4",
+      staticClass: "form-signin mt-4 bottom-m",
       on: {
         submit: function($event) {
           $event.preventDefault()
@@ -50479,7 +50479,7 @@ var render = function() {
   return _c(
     "form",
     {
-      staticClass: "form-signin mt-4 mb-4",
+      staticClass: "form-signin mt-4 bottom-m",
       on: {
         submit: function($event) {
           $event.preventDefault()

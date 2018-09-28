@@ -1,6 +1,6 @@
 <template>
   
-  <form class="form-signin mt-4" v-on:submit.prevent="createCategory">
+  <form class="form-signin mt-4 bottom-m" v-on:submit.prevent="createCategory">
     <h3>Create your own category and add your own recipe to it.</h3>
     <div class="form-group">
       <label for="add-title">Category</label>

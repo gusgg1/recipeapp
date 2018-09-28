@@ -1,6 +1,6 @@
 <template>
 
-  <form class="form-signin mt-4 mb-4" v-on:submit.prevent="createRecipe">
+  <form class="form-signin mt-4 bottom-m" v-on:submit.prevent="createRecipe">
     <h3 class="text-center">Add your recipe</h3>
     <div class="form-group">
       <label for="add-title">Title:</label>
