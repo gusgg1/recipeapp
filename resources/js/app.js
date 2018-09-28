@@ -12,6 +12,7 @@ const Addrecipe = Vue.component('Addrecipe', require('./components/Addrecipe.vue
 const Listrecipes = Vue.component('Listrecipes', require('./components/Listrecipes.vue'));
 const Editrecipe = Vue.component('Editrecipe', require('./components/Editrecipe.vue'));
 
+
 // routes:
 const routes = [
 	{

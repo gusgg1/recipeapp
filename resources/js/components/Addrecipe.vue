@@ -58,6 +58,7 @@
         axios.post('/api/recipe', this.recipe)
           .then(response => {
             this.$router.push({ name: 'Listrecipes' });
+            this.flash(`Your recipe ${this.recipe.title} has been created.`, 'success');
           })
           .catch(err => console.log(err));
       }

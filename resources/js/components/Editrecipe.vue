@@ -58,6 +58,7 @@
         axios.put('/api/recipe', this.recipe)
           .then(response => {
             this.$router.push({ name: 'Navbar' });
+            this.flash(`Your recipe ${this.recipe.title} has been updated.`, 'success');
           })
           .catch(err => console.log(err));
       }

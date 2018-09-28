@@ -1,10 +1,11 @@
 <template>  
   <div>
+    
+    <flash-message class="myCustomClass"></flash-message>
 
     <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
       <div class="col-md-6 px-0">
         <h2 class="display-5 font-italic">Create a cooking category and add your recipe to it...</h2>           
-
         <router-link role="button" class="btn btn-primary btn-lg" v-bind:to="{path: '/add-recipe'}">
           Create category
         </router-link>
@@ -42,6 +43,10 @@
 </template>
 
 <script>
+  import VueFlashMessage from 'vue-flash-message';
+  import 'vue-flash-message/dist/vue-flash-message.min.css';
+  Vue.use(VueFlashMessage);
+
   export default {
     data() {
       return {

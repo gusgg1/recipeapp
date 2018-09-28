@@ -1,5 +1,6 @@
 <template>
   <div class="bottom-m">
+    <flash-message class="myCustomClass"></flash-message>
     <div v-for="recipe in recipes" class="card mt-4 mb-4">
       <h5 class="card-header">{{ recipe.duration }} min.</h5>
       <div class="card-body">
@@ -41,8 +42,10 @@
     methods: {
       deleteRecipe(id) {
         axios.delete(`/api/recipe/${id}`)
-          .then(res => {
+          .then(({data}) => {
+            console.log(data);
             this.$router.push({ name: 'Navbar' });
+            this.flash(`Your recipe ${data.data.title} has been deleted.`, 'success');
           })
           .catch(err => console.log(err));
       }
