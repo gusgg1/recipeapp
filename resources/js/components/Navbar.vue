@@ -22,7 +22,7 @@
             <h5 class="mb-0">
               <p class="text-dark">Add your recipe to the {{ category.title }} category.</p>
             </h5>
-            <div class="mb-1 text-muted">{{ category.created_at }}</div>
+            <div class="mb-1 text-muted">Category created {{ category.created_at }}.</div>
             
             <router-link role="button" class="btn btn-success btn-sx mt-3 mb-4" v-bind:to="{name: 'Addrecipe', params: {id: category.id}}">
               Add your recipe

@@ -50127,7 +50127,9 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "mb-1 text-muted" }, [
-                    _vm._v(_vm._s(category.created_at))
+                    _vm._v(
+                      "Category created " + _vm._s(category.created_at) + "."
+                    )
                   ]),
                   _vm._v(" "),
                   _c(
